@@ -1,0 +1,134 @@
+/* Sidebar and Menu Styles */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-image: url('C:\\Users\\unnat\\OneDrive\\Desktop\\CybersecApp\\CyberSecurityApp\\green.jpeg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo h3 {
+  margin: 0;
+  padding: 10px;
+  font-size: 24px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu li {
+  margin: 5px;
+}
+
+.menu a, .menu button.logout-button {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.menu a:hover, .menu button.logout-button:hover {
+  background-color: #555;
+}
+
+.menu i {
+  margin-right: 10px;
+}
+
+.menu button.logout-button i {
+  margin-right: 10px;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recording-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.start-recording-btn, .stop-recording-btn, .decrypt-audio-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  border: none;
+  color: white;
+}
+
+.start-recording-btn {
+  background-color: #28a745;
+}
+
+.start-recording-btn:hover {
+  background-color: #176e29;
+}
+
+.stop-recording-btn {
+  background-color: #dc3545;
+}
+
+.stop-recording-btn:hover {
+  background-color: #c82333;
+}
+
+/* Improved Decrypt Audio Button Styles */
+.decrypt-audio-btn {
+  background-color: #28a745;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.decrypt-audio-btn:hover {
+  background-color: #176e29;
+}
+
+.file-input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

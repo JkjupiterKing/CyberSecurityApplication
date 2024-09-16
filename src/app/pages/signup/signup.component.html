@@ -1,0 +1,18 @@
+<div class="signup-container">
+    <h2>Signup</h2>
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email" [(ngModel)]="regObj.email" type="email" required />
+  
+      <label for="password">Set Password:</label>
+      <input id="password" formControlName="password" [(ngModel)]="regObj.password" type="password" required />
+  
+      <label for="confirmPassword">Confirm Password:</label>
+      <input id="confirmPassword" formControlName="confirmPassword" [(ngModel)]="regObj.confirmPassword" type="password" required />
+  
+      <button type="submit" [disabled]="signupForm.invalid">Register</button>
+      <span>Already have an account? </span>
+      <a [routerLink]="['/login']">Login here</a>
+    </form>
+  </div>
+  
