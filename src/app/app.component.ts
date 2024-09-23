@@ -9,5 +9,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular18_login_with_auth_guard';
+  title = 'CybersecurityApplication';
 }
