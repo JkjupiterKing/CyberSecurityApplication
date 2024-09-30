@@ -4,6 +4,8 @@ import { LayoutComponent } from './pages/layout/layout.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { SqlInjectionComponent } from './sql-injection/sql-injection.component';
+import { FormsModule } from '@angular/forms';
+import { AudioEdComponent } from './audio-ed/audio-ed.component';
 
 export const routes: Routes = [
     {
@@ -25,11 +27,15 @@ export const routes: Routes = [
     },
     {
         path: 'sql-injection',
-        component: SqlInjectionComponent,
+        component: SqlInjectionComponent
     },
     {
         path: 'layout',
         component: LayoutComponent
+    },
+    {
+        path: 'audio-ed', 
+        component: AudioEdComponent
     },
     {
         path: '**',

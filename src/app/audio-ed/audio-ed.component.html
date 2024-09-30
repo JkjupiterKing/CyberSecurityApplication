@@ -1,0 +1,12 @@
+<div class="audio-ed-container">
+    <div class="recording-actions">
+      <button *ngIf="!isRecording" (click)="startRecording()" class="start-recording-btn">Start Recording</button>
+      <button *ngIf="isRecording" (click)="stopRecording()" class="stop-recording-btn">Stop Recording</button>
+  
+      <label class="decrypt-audio-btn">
+        Decrypt Audio
+        <input type="file" (change)="decryptAudio($event)" class="file-input" />
+      </label>
+    </div>
+  </div>
+  

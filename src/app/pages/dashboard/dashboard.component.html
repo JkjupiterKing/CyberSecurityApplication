@@ -5,22 +5,14 @@
     </div>
     <ul class="menu">
       <li><a routerLink="/dashboard"><i class="pi pi-home"></i> Home</a></li>
-      <li><a routerLink="/AudioEncryptionDecryption"><i class="pi pi-folder"></i> Audio Encryption-Decryption</a></li>
-      <li><a routerLink="sql-injection"><i class="pi pi-folder"></i> SQL Injection</a></li>
+      <!-- <li><a routerLink="/audio-ed"><i class="pi pi-folder"></i> Audio Encryption-Decryption</a></li> -->
+      <li><button (click)="audioEd()" class="pi pi-folder audio-ed-container">Audio Encryption-Decryption</button></li>
+      <li><button (click)="sqlinjection()" class="pi pi-folder sql-injection-btn">SQL Injection</button></li>
       <li><button (click)="logout()" class="pi pi-sign-out logout-button">Logout</button></li>
     </ul>
   </div>
 
   <div class="main-content">
-    <div class="recording-actions">
-      <button *ngIf="!isRecording" (click)="startRecording()" class="start-recording-btn">Start Recording</button>
-      <button *ngIf="isRecording" (click)="stopRecording()" class="stop-recording-btn">Stop Recording</button>
-      
-      <!-- decrypt audio button -->
-      <label class="decrypt-audio-btn">
-        Decrypt Audio
-        <input type="file" (change)="decryptAudio($event)" class="file-input" />
-      </label>
-    </div>
+    <h2>Welcome to the Dashboard</h2>
   </div>
 </div>
