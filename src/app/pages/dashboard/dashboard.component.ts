@@ -16,6 +16,7 @@ export class DashboardComponent {
   audioChunks: Blob[] = [];
   isRecording = false;
   encryptionKey = '7410qaz'; // replace with a secure key
+navigateToSqlInjection: any;
 
   constructor(private router: Router) {}
 
@@ -78,7 +79,7 @@ export class DashboardComponent {
       a.download = 'encrypted_audio.txt'; // Save with .txt extension
       a.click();
 
-      // Clean up memory
+      // cleanmemory
       URL.revokeObjectURL(downloadUrl);
       console.log('Encrypted audio saved as encrypted_audio.txt');
     };
@@ -95,11 +96,11 @@ export class DashboardComponent {
   
       reader.onload = async () => {
         const encryptedText = reader.result as string;
-        const key = prompt('Enter the encryption key'); // Ask for the security key
+        const key = prompt('Enter the encryption key'); // ask for the security ke
   
         if (key) {
           try {
-            // Decrypt the data
+            // decrypt the data
             const decryptedBytes = CryptoJS.AES.decrypt(encryptedText, key);
             const decryptedText = decryptedBytes.toString(CryptoJS.enc.Utf8);
   
@@ -115,7 +116,7 @@ export class DashboardComponent {
             a.download = 'decrypted_audio.webm'; 
             a.click();
   
-            // Clean up memory
+            // cleanmemory
             URL.revokeObjectURL(downloadUrl);
             console.log('Decrypted audio saved as decrypted_audio.webm');
           } catch (error) {

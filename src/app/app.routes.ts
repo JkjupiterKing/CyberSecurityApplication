@@ -24,8 +24,8 @@ export const routes: Routes = [
         component: DashboardComponent
     },
     {
-        path: 'SQL',
-        component: SqlInjectionComponent
+        path: 'sql-injection',
+        component: SqlInjectionComponent,
     },
     {
         path: 'layout',
