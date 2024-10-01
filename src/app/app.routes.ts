@@ -3,9 +3,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { SignupComponent } from './pages/signup/signup.component';
-import { SqlInjectionComponent } from './sql-injection/sql-injection.component';
+import { SqlInjectionComponent } from './pages/sql-injection/sql-injection.component';
 import { FormsModule } from '@angular/forms';
-import { AudioEdComponent } from './audio-ed/audio-ed.component';
+import { AudioEdComponent } from './pages/audio-ed/audio-ed.component';
 
 export const routes: Routes = [
     {
