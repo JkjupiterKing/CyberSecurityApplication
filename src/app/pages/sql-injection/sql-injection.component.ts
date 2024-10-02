@@ -13,7 +13,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class SqlInjectionComponent {
   vulnEmail: string = '';
   vulnPassword: string = '';
-  vulnQueryResult: string = '';
+  vulnQueryResult: string = ''; 
   
   safeEmail: string = '';
   safePassword: string = '';
