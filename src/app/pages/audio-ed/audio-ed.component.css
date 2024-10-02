@@ -1,0 +1,89 @@
+/* General Layout */
+.audio-ed-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('C:\\Users\\unnat\\OneDrive\\Desktop\\CybersecApp\\CyberSecurityApp\\audioed.jpg');
+    background-size: cover;
+    background-position-x: 20px 30px;
+    background-position: center;
+    padding: 20px;
+  }
+  
+  .recording-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .start-recording-btn, .stop-recording-btn, .decrypt-audio-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .start-recording-btn {
+    background-color: #27ae60;
+  }
+  
+  .start-recording-btn:hover {
+    background-color: #229954;
+  }
+  
+  .stop-recording-btn {
+    background-color: #e74c3c;
+  }
+  
+  .stop-recording-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .decrypt-audio-btn {
+    background-color: #3498db;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .decrypt-audio-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .file-input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+  
+    .menu a, .menu button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .main-content {
+      padding: 20px;
+    }
+  
+    .start-recording-btn, .stop-recording-btn, .decrypt-audio-btn {
+      padding: 12px 20px;
+    }
+  }
+  

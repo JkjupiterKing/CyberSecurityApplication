@@ -1,0 +1,70 @@
+.query-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.query-box {
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.query-box h2 {
+  text-align: center;
+  color: #333;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.vulnerable-btn {
+  background-color: #ff6347;
+}
+
+.vulnerable-btn:hover {
+  background-color: #e5533b;
+}
+
+.safe-btn {
+  background-color: #28a745;
+}
+
+.safe-btn:hover {
+  background-color: #218838;
+}
+
+.vulnerable {
+  background-color: #ffe5e5;
+}
+
+.safe {
+  background-color: #e5ffe5;
+}

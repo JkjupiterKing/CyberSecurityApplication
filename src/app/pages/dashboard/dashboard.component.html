@@ -1,0 +1,18 @@
+<div class="dashboard-container">
+  <div class="sidebar">
+    <div class="logo">
+      <h3>Menu</h3>
+    </div>
+    <ul class="menu">
+      <li><a routerLink="/dashboard"><i class="pi pi-home"></i> Home</a></li>
+      <!-- <li><a routerLink="/audio-ed"><i class="pi pi-folder"></i> Audio Encryption-Decryption</a></li> -->
+      <li><button (click)="audioEd()" class="pi pi-folder audio-ed-container">Audio Encryption-Decryption</button></li>
+      <li><button (click)="sqlinjection()" class="pi pi-folder sql-injection-btn">SQL Injection</button></li>
+      <li><button (click)="logout()" class="pi pi-sign-out logout-button">Logout</button></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h2>Welcome to the Dashboard</h2>
+  </div>
+</div>
